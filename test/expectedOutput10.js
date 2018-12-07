@@ -1,0 +1,22 @@
+let pattern =  '* * * * * * * * * * \n'
+   pattern +=  '**                 * \n'
+   pattern +=  '* *                 * \n'
+   pattern +=  '*  *                 * \n'
+   pattern +=  '*   *                 * \n'
+   pattern +=  '*    *                 * \n'
+   pattern +=  '*     *                 * \n'
+   pattern +=  '*      *                 * \n'
+   pattern +=  '*       *                 * \n'
+   pattern +=  '*        * * * * * * * * * * \n'
+   pattern +=  ' *       *                 * \n'
+   pattern +=  '  *      *                 * \n'
+   pattern +=  '   *     *                 * \n'
+   pattern +=  '    *    *                 * \n'
+   pattern +=  '     *   *                 * \n'
+   pattern +=  '      *  *                 * \n'
+   pattern +=  '       * *                 * \n'
+   pattern +=  '        **                 * \n'
+   pattern +=  '         * * * * * * * * * * '
+
+
+exports.pattern = pattern;

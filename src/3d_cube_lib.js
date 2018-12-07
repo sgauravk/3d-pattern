@@ -5,7 +5,7 @@ const generateLine = function(character,length){
 const generateMiddleLine = function(character,length){
   let  line = character;
   if(length>1){
-    line = line + generateLine(' ',length-2) + character;
+    line = line + generateLine('  ',length-2) + character;
   }
   return line;
 }
@@ -13,13 +13,13 @@ const generateMiddleLine = function(character,length){
 const firstHalfCube = function(side){
   let pattern = [];
   let gap = 0;
-  pattern[0] = generateLine('*',side);
+  pattern[0] = generateLine('* ',side);
   for(let count=1; count<side-1; count++){
-    pattern[count] = '*'+generateLine(' ',gap)+generateMiddleLine('*',side);
+    pattern[count] = '*'+generateLine(' ',gap)+generateMiddleLine('* ',side);
     gap++;
   }
   if(side>1){
-    pattern[side-1] = '*'+generateLine(' ',gap)+generateLine('*',side);
+    pattern[side-1] = '*'+generateLine(' ',gap)+generateLine('* ',side);
   }
   return pattern;
 };
@@ -28,12 +28,12 @@ const secondHalfCube = function(side){
   let gap1 = side-3;
   let gap2 = 1;
   for(let count=side; count<2*side-2; count++){
-    pattern[count] = generateLine(' ',gap2)+'*'+generateLine(' ',gap1)+generateMiddleLine('*',side);
+    pattern[count] = generateLine(' ',gap2)+'*'+generateLine(' ',gap1)+generateMiddleLine('* ',side);
     gap1--;
     gap2++;
   }
   if(side>1){
-    pattern[2*side-2] = generateLine(' ',gap2)+generateLine('*',side);
+    pattern[2*side-2] = generateLine(' ',gap2)+generateLine('* ',side);
   }
   return pattern;
 };
