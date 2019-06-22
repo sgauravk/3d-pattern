@@ -1,4 +1,4 @@
-const lib = require('./3d_cube_lib.js');
+const lib = require('./src/3d_cube_lib.js');
 const cubePattern = lib.cubePattern;
 
 const main = function(){
